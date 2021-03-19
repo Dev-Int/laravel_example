@@ -12,7 +12,9 @@
         <footer>
             <p>
                 &copy; Copyright {{ date('Y') }}
+                @if(!\Illuminate\Support\Facades\Route::is('app_about'))
                 &middot; <a href="{{ route('app_about') }}">About us</a>
+                @endif
             </p>
         </footer>
     </body>
