@@ -4,5 +4,5 @@
 
 @section('content')
     <p>Built with &hearts; by Dev-Int.</p>
-    <p><a href="/">Revenir à l'accueil</a></p>
+    <p><a href="{{ route('app_home') }}">Revenir à l'accueil</a></p>
 @endsection
