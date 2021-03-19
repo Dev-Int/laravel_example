@@ -4,12 +4,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Hello City</title>
+        <title>About us | Hello City</title>
     </head>
     <body>
-        <h1>Hello from Brittany !</h1>
-
-        <p>It's currently {{ date('h:i A') }}.</p>
+        <p>Built with &hearts; by Dev-Int.</p>
+        <p><a href="/">Revenir à l'accueil</a></p>
 
         <footer>
             <p>&copy; Copyright {{ date('Y') }} &middot; <a href="/about-us">About us</a></p>
