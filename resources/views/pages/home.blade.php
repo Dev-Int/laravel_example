@@ -1,7 +1,7 @@
 @extends('base')
 
 @section('content')
-    <img src="/img/logo.gif" alt="Bretagne Flag">
+    <img src="{{ asset('img/logo.gif') }}" alt="Bretagne Flag">
 
     <h1>Hello from Brittany !</h1>
 
