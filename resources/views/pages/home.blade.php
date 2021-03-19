@@ -1,4 +1,4 @@
-@extends('base')
+@extends('layouts.base')
 
 @section('content')
     <img src="{{ asset('img/logo.gif') }}" alt="Bretagne Flag" class="rounded shadow-md h-32 mt-12">
