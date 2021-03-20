@@ -14,6 +14,8 @@
                         <span class="md:hidden">&nbsp;</span>
                         <a href="{{ route('blog_show', ['id' => 1]) }}" class="font-medium text-gray-500 hover:text-gray-900">Blog</a>
                         <span class="md:hidden">&nbsp;|&nbsp;</span>
+                        <a href="{{ route('photo_create') }}" class="font-medium text-gray-500 hover:text-gray-900">Nouvelle Photo</a>
+                        <span class="md:hidden">&nbsp;|&nbsp;</span>
                         <a href="{{ route('app_about') }}" class="font-medium text-gray-500 hover:text-gray-900">About us</a>
                     </div>
                 </nav>

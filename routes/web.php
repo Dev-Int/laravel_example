@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AppController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\PhotosController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [AppController::class, 'index'])->name('app_home');
@@ -15,3 +16,6 @@ Route::get('blogs/{id}', [BlogController::class, 'show'])
 
 Route::get('blogs', [BlogController::class, 'create'])->name('blog_create');
 Route::post('blogs', [BlogController::class, 'store'])->name('blog_store');
+
+Route::get('photos', [PhotosController::class, 'create'])->name('photo_create');
+Route::post('photos', [PhotosController::class, 'store'])->name('photo_store');
