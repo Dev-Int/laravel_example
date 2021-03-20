@@ -2,26 +2,27 @@
 
 namespace App\Providers;
 
+use App\Http\Repositories\PhotosRepository;
+use App\Http\Repositories\PhotosRepositoryInterface;
 use Illuminate\Support\ServiceProvider;
 
-class AppServiceProvider extends ServiceProvider
+final class AppServiceProvider extends ServiceProvider
 {
     /**
      * Register any application services.
-     *
-     * @return void
      */
-    public function register()
+    public function register(): void
     {
-        //
+        $this->app->bind(
+            PhotosRepositoryInterface::class,
+            PhotosRepository::class
+        );
     }
 
     /**
      * Bootstrap any application services.
-     *
-     * @return void
      */
-    public function boot()
+    public function boot(): void
     {
         //
     }

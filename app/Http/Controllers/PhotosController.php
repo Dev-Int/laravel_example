@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Repositories\PhotosRepositoryInterface;
 use App\Http\Requests\ImagesRequest;
 use Illuminate\Contracts\View\View;
 
@@ -12,9 +13,9 @@ final class PhotosController extends Controller
         return \view('pages.photos.create');
     }
 
-    public function store(ImagesRequest $request): View
+    public function store(ImagesRequest $request, PhotosRepositoryInterface $photosRepository): View
     {
-        $request->image->store(config('images.path'), 'public');
+        $photosRepository->save($request->image);
 
         return view('pages.photos.show');
     }
