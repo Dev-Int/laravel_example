@@ -1,7 +1,7 @@
 @extends('layouts.base')
 
 @section('content')
-    <img src="{{ asset('img/logo.gif') }}" alt="Bretagne Flag" class="rounded shadow-md h-32 mt-12">
+    <img src="{{ asset('img/logo.gif') }}" alt="Bretagne Flag" class="rounded shadow-md h-32">
 
     <h1 class="text-gray-900 text-3xl sm:text-5xl font-semibold mt-5">Hello from Brittany !</h1>
 

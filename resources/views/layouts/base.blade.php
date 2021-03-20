@@ -9,10 +9,12 @@
         <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     </head>
     <body class="flex flex-col justify-between min-h-screen items-center py-6">
+        @include('layouts/partials/_header')
+
         <main role="main" class="flex flex-col justify-center items-center">
             @yield('content')
         </main>
 
-    @include('layouts/partials/_footer')
+        @include('layouts/partials/_footer')
     </body>
 </html>
