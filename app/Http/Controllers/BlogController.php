@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\BlogRequest;
 use Illuminate\Contracts\View\View;
-use Illuminate\Http\Request;
 
 final class BlogController extends Controller
 {
@@ -17,7 +17,7 @@ final class BlogController extends Controller
         return view('pages.blog.create');
     }
 
-    public function store(Request $request): string
+    public function store(BlogRequest $request): string
     {
         return 'Le titre de l\'article est ' . $request->input('title');
     }

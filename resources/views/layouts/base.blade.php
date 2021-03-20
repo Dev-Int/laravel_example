@@ -11,7 +11,7 @@
     <body class="flex flex-col justify-between min-h-screen items-center py-6">
         @include('layouts/partials/_header')
 
-        <main role="main" class="flex flex-col justify-center items-center">
+        <main role="main" class="w-full p-4 flex flex-col justify-center items-center">
             @yield('content')
         </main>
 
