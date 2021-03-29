@@ -21,7 +21,7 @@ final class BlogRequest extends FormRequest
     {
         return [
             'title' => 'bail|required|between:5,50',
-            'content' => 'bail|required|max:500',
+            'post_content' => 'bail|required|max:500',
         ];
     }
 }
